@@ -1,0 +1,8 @@
+<h1>Bookmark</h1>
+<p>
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.input :comment %>
+  <%= f.association :movie %>
+  <%= f.submit "Submit", disable_with: 'Submiting...' %>
+<% end %>
+</p>
